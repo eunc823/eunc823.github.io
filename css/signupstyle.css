@@ -81,3 +81,8 @@ hr{
 .find a:hover{
     color:#707070;
 }
+span.err {
+    font-size: 6px;
+    color: red;
+    /* display: none; */
+}
