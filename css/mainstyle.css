@@ -1,0 +1,68 @@
+/* 메인 */
+header, section, aside, footer { padding : 10px; }
+#container		{ background-color:#ffffff; width:1240px; margin: 0 auto; padding:10px; }
+header {
+    background-color: rgba(88, 197, 255, 0.469);
+    height: 150px;
+}
+nav > ul.navi {
+    list-style: none;
+    padding: 5px;
+    width: 500px;
+    /* margin-right: auto; */
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    float: right;
+}
+nav {
+    transform: translateY(5px);
+}
+nav > ul.navi a {
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+nav > ul.navi li:not(:last-of-type)::after {
+    color: #0464ffa7;
+    content: '▶';
+}
+nav > ul.navi li:hover a{
+    color: #0464ffa7;
+}
+
+section#content {
+    background-attachment: #ffffff;
+    width: 650px;
+    height: 500px;
+    float: left;
+    opacity: 0;
+    animation: fade-in 3s forwards;
+}
+aside {
+    background-color: #ffffff;
+    width: 500px;
+    height: 700px;
+    float: right;
+      opacity: 0;
+    animation: fade-in 3s forwards;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+footer#footer{
+    background-color: #e8faff;
+    clear: both;
+    text-align: center;
+}
+#content img:hover {
+    box-shadow: 0 35px 77px -17px rgba(0, 0, 0, .4);
+}
+#sideinfo img:hover {
+    box-shadow: 0 35px 77px -17px rgba(0, 0, 0, .4);
+}
